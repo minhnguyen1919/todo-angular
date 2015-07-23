@@ -25,7 +25,26 @@ todoApp.config(function($routeProvider) {
 
           },
           link: function(scope, element, attrs) {
+            var name = '';
 
+            scope.state = true;
+
+            var click = function() {
+              console.log('asdasd');
+              scope.state = !scope.state;
+            }
+
+            scope.click = click;
+
+            element.bind('click', function () {
+              console.log('You clicked me!');
+            });
+            element.bind('mouseenter', function () {
+              console.log('mouse enter');
+            });
+            element.bind('mouseleave', function () {
+              console.log('mouse leave');
+            });
           }
         };
       }
