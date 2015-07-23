@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TodoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Todos Practice</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+</head>
+<body>
+	<div class="page-wrap">
+		<div class="container">
+			<header>
+				<h1 class="todo-title">todos</h1>
+			</header>
+			<div ng-view></div>
+			<footer>
+				<p>Double-click to edit a todo</p>
+				<p>Written by <a href="#">Addy Osmani</a></p>
+				<p>Part of <a href="#">TodoMVC</a></p>
+			</footer>
+		</div><!-- End .container -->
+	</div><!-- End .page-wrap -->
+	<script type="text/javascript" src="common/route.js"></script>
+	<script type="text/javascript" src="todo/todoModel.js"></script>
+	<script type="text/javascript" src="todo/todosController.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<section class="todo-wrap">
+	<div class="todos">
+
+		<div class="add-todo">
+			<input id="toggle-all" class="toggle-all" type="checkbox">
+			<form action="" ng-submit="addTodo()">
+				<input class="input-todo" ng-model="todo" type="text" placeholder="What needs to be done?">
+			</form>
+		</div><!-- End .add-todo -->
+
+		<div class="todo-list-wrap">
+			<ul class="todo-list" id="todo-list">
+				<li todo-directive todo-data="todo" ng-repeat="todo in todos">
+				</li>
+			</ul><!-- End .todo-list -->
+		</div><!-- End .todo-list-wrap -->
+
+		<div class="todo-group">
+			<span id="item-left" class="item-left">10 items left</span>
+			<ul class="list-action">
+				<li><a id="all-todo" class="button btn-active">All</a></li>
+				<li><a id="active-todo" class="button">Active</a></li>
+				<li><a id="completed-todo" class="button">Completed</a></li>
+			</ul>
+			<a id="clear-button" class="clear-button">Clear completed</a>
+		</div><!-- End .todo-group -->
+
+	</div><!-- End .todos -->
+</section><!-- End .todo-wrap -->
